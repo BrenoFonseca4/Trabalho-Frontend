@@ -1,49 +1,78 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookNest - Cadastro</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="pagina-cadastro">
+
     <header>
         <h1><a href="index.html">BookNest</a></h1>
-
     </header>
+
     <main>
+
         <section id="cadastro">
+
             <h2>Crie sua conta</h2>
-            <p>Organize sua biblioteca pessoal!</p>
 
-            <form>
-                <label for="usuario">Nome de usuário:</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Escolha um nome de usuario" required>
+            <p>Comece a organizar sua biblioteca pessoal!</p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <form action="home.html">
 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                <fieldset>
 
-                <label for="Confirmar senha">Confirmar senha:</label>
-                <input type="password" id="confirmar senha" name="confirmar senha" placeholder="Digite sua senha novamente" required>
+                    <legend>Informações da conta</legend>
+
+                    <div class="campo-formulario">
+                        <label for="usuario">Nome de usuário:</label>
+                        <input type="text" id="usuario" name="usuario"
+                            placeholder="Escolha um nome de usuário" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha"
+                            placeholder="Crie uma senha" required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="confirmar-senha">Confirmar senha:</label>
+                        <input type="password" id="confirmar-senha"
+                            name="confirmar-senha"
+                            placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </fieldset>
 
                 <button type="submit">Criar conta</button>
+
             </form>
+
             <p>
                 Já possui uma conta?
                 <a href="login.html">Entrar</a>
-
-
             </p>
 
-
         </section>
+
     </main>
+
     <footer>
-        <p>BookNest - Sua biblioteca digital.</p>
+        <p>BookNest - Sua biblioteca pessoal digital.</p>
         <p>&copy; 2026 BookNest. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,157 @@
+
+/* Página de cadastro */
+
+.pagina-cadastro {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Cabeçalho */
+
+.pagina-cadastro header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-cadastro header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Formulário */
+
+#cadastro {
+    background-color: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #cccccc;
+}
+
+#cadastro h2 {
+    color: #34483f;
+    text-align: center;
+}
+
+#cadastro > p {
+    text-align: center;
+}
+
+.campo-formulario {
+    margin-bottom: 15px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+#cadastro fieldset {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+#cadastro legend {
+    color: #34483f;
+    font-weight: bold;
+}
+
+#cadastro button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #34483f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#cadastro button:hover {
+    background-color: #506b5e;
+}
+
+/* Rodapé */
+
+.pagina-cadastro footer {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página de login */
+
+.pagina-login {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+.pagina-login header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-login header a {
+    color: white;
+    text-decoration: none;
+}
+
+#login {
+    background-color: white;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #cccccc;
+}
+
+#login h2 {
+    color: #34483f;
+    text-align: center;
+}
+
+#login > p {
+    text-align: center;
+}
+
+#login fieldset {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+#login legend {
+    color: #34483f;
+    font-weight: bold;
+}
+
+#login button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #34483f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login button:hover {
+    background-color: #506b5e;
+}
+
+.pagina-login footer {
+    text-align: center;
+    padding: 15px;
+}
