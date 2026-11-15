@@ -155,3 +155,333 @@
     text-align: center;
     padding: 15px;
 }
+
+/* Página inicial */
+.pagina-home {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-home header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-home nav {
+    margin-top: 15px;
+}
+
+.pagina-home nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-home nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-home main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-home section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-home h2 {
+    color: #34483f;
+}
+
+/* Livros */
+.pagina-home article {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.pagina-home article h3 {
+    color: #506b5e;
+}
+
+.pagina-home article a {
+    color: #34483f;
+    font-weight: bold;
+}
+
+/* Barra de progresso */
+.pagina-home progress {
+    width: 250px;
+    height: 18px;
+    accent-color: #506b5e;
+}
+
+/* Rodapé */
+.pagina-home footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página do catálogo */
+.pagina-catalogo {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-catalogo header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-catalogo nav {
+    margin-top: 15px;
+}
+
+.pagina-catalogo nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-catalogo nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-catalogo main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-catalogo section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-catalogo h2 {
+    color: #34483f;
+}
+
+/* Cada livro do catálogo */
+.pagina-catalogo article {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pagina-catalogo article h3 {
+    color: #506b5e;
+}
+
+.pagina-catalogo article a {
+    color: #34483f;
+    font-weight: bold;
+}
+
+/* Vídeo */
+.pagina-catalogo video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rodapé */
+.pagina-catalogo footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página da biblioteca */
+.pagina-biblioteca {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-biblioteca header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-biblioteca nav {
+    margin-top: 15px;
+}
+
+.pagina-biblioteca nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-biblioteca nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-biblioteca main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-biblioteca section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-biblioteca h2 {
+    color: #34483f;
+}
+
+/* Livros */
+.pagina-biblioteca article {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;}
+    /* Barra de leitura */
+.pagina-biblioteca progress {
+    width: 200px;
+    height: 35px;
+    accent-color: #506b5e;
+    display: block;
+    margin: 10px auto;
+}
+
+.pagina-biblioteca article h3 {
+    color: #506b5e;
+}
+
+.pagina-biblioteca article a {
+    color: #34483f;
+    font-weight: bold;
+}
+/* Sugestões de leitura */
+.pagina-biblioteca .sugestoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pagina-biblioteca .sugestoes article {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.pagina-biblioteca .sugestoes img {
+    width: 120px;
+}
+/* Rodapé */
+.pagina-biblioteca footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página de detalhes do livro */
+.pagina-detalhes {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-detalhes header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-detalhes nav {
+    margin-top: 15px;
+}
+
+.pagina-detalhes nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-detalhes nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-detalhes main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-detalhes section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-detalhes h2 {
+    color: #34483f;
+}
+
+.pagina-detalhes h3 {
+    color: #506b5e;
+}
+
+/* Formulários */
+.pagina-detalhes form {
+    margin-top: 15px;
+}
+
+.pagina-detalhes label {
+    margin-right: 10px;
+}
+
+.pagina-detalhes input {
+    margin-bottom: 10px;
+}
+
+/* Barra de progresso */
+.pagina-detalhes progress {
+    width: 250px;
+    height: 18px;
+    accent-color: #506b5e;
+}
+
+/* Rodapé */
+.pagina-detalhes footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
