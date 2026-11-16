@@ -1,114 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest - Catalogo</title>
+    <title>BookNest - Descobrir Livros</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="pagina-catalogo"></body>
+
+<body class="pagina-catalogo">
+
     <header>
         <h1>BookNest</h1>
+
         <nav>
-            <a href="home.html">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
+            <a href="home.html">Início</a>
+            <a href="catalogo.html">Descobrir</a>
             <a href="biblioteca.html">Minha Biblioteca</a>
             <a href="perfil.html">Meu Perfil</a>
             <a href="index.html">Sair</a>
-
         </nav>
     </header>
+
     <main>
+
         <section id="introducao-catalogo">
-            <h2>Catálogo de livros</h2>
+            <h2>Descubra sua próxima leitura</h2>
             <p>
-                Explore o catálogo e encontre sua próxima leitura.
-                Consulte informações e descubra novas histórias.
+                Explore novos livros, conheça diferentes histórias
+                e encontre sua próxima aventura.
             </p>
         </section>
-        <section id="lista-livros">
-            <h2>Livros disponíveis</h2>
 
-<article>
+        <section id="novidades">
+            <h2>Novidades</h2>
+            <p>Conheça algumas obras para adicionar à sua lista de leitura.</p>
 
-    <img src="images/hobbit.jpg" alt="Capa do livro O Hobbit">
+            <div class="lista-descoberta">
 
-    <h3>O Hobbit</h3>
+                <article>
+                    <h3>O Nome do Vento</h3>
+                    <img src="images/kkc.jpg" alt="Capa Nome do vento"width="150"height="225">
+                    <p>Autor: Patrick Rothfuss</p>
+                    <p>
+                        A história de Kvothe, um homem que narra sua
+                        trajetória repleta de magia, música e mistérios.
+                    </p>
+                </article>
 
-    <p>Autor: J. R. R. Tolkien</p>
+                <article>
+                    <h3>Duna</h3>
+                    <img src="images/duna.jpg" alt="capa duna"width="150"height="225">
+                    <p>Autor: Frank Herbert</p>
+                    <p>
+                        Em um planeta desértico, uma família se envolve
+                        em uma disputa pelo controle de um recurso precioso.
+                    </p>
+                </article>
 
-    <p>
-        Bilbo Bolseiro embarca em uma aventura inesperada
-        ao lado de um grupo de anões.
-    </p>
+                <article>
+                    <h3>O Oceano no Fim do Caminho</h3>
+                    <img src="images/oceano.jpg" width="150"height="225">
+                    <p>Autor: Neil Gaiman</p>
+                    <p>
+                        Uma história fantástica sobre memória, infância
+                        e acontecimentos misteriosos.
+                    </p>
+                </article>
 
-    <a href="detalhes-livro.html">Ver detalhes</a>
-
-    <a href="https://www.harpercollins.com.br/"
-        target="_blank">Consultar editora</a>
-
-    <h4>Conheça também sua adaptação para o cinema!</h4>
-
-    <p>
-        O Hobbit ganhou uma adaptação cinematográfica
-        produzida pela New Line Cinema e distribuída
-        pela Warner Bros.
-    </p>
-
-    <video controls width="500">
-        <source src="videos/trailer-hobbit.mp4" type="video/mp4">
-        Seu navegador não consegue reproduzir este vídeo.
-    </video>
-
-    <p>
-        <a href="https://www.youtube.com/results?search_query=the+hobbit+an+unexpected+journey+official+trailer"
-            target="_blank">Assistir ao trailer no YouTube</a>
-    </p>
-
-</article>
-
-             <img src="images/1984.jpg" alt="Capa do livro 1984">
-
-                <h3>1984</h3>
-
-                <p>Autor: George Orwell</p>
-
-                <p>
-                    Uma sociedade controlada por um governo totalitário
-                    onde a liberdade individual é praticamente inexistente.
-                </p>
-
-                <a href="detalhes-livro.html">Ver detalhes</a>
-
-                <a href="https://www.companhiadasletras.com.br/"
-                    target="_blank">Consultar editora</a>
-    <article>
-
-                <img src="images/pequeno-principe.jpg"
-                    alt="Capa do livro O Pequeno Príncipe">
-
-                <h3>O Pequeno Príncipe</h3>
-
-                <p>Autor: Antoine de Saint-Exupéry</p>
-
-                <p>
-                    Uma história sobre amizade, descobertas e
-                    a importância de enxergar além das aparências.
-                </p>
-
-                <a href="detalhes-livro.html">Ver detalhes</a>
-
-                <a href="https://www.agir.com.br/"
-                    target="_blank">Consultar editora</a>
-
-            </article>
+            </div>
         </section>
+
+        <section id="populares">
+            <h2>Livros populares</h2>
+            <p>Algumas obras bastante conhecidas entre os leitores.</p>
+
+            <div class="lista-descoberta">
+
+                <article>
+                    <h3>O Senhor dos Anéis</h3>
+                    <img src="images/lotr.jpg" width="150"height="225">
+                    <p>Autor: J. R. R. Tolkien</p>
+                    <p>Uma jornada épica pela Terra-média para destruir o Um Anel.</p>
+                </article>
+
+                <article>
+                    <h3>1984</h3>
+                    <img src="images/1984.jpg" alt="capa 1984"width="150"height="225">
+                    <p>Autor: George Orwell</p>
+                    <p>Um romance sobre vigilância, manipulação e controle social.</p>
+                </article>
+
+                <article>
+                    <h3>O Pequeno Príncipe</h3>
+                    <img src="images/pequenoprincipe.jpg" alt="capa pequenoprincipe"width="150"height="225">
+                    <p>Autor: Antoine de Saint-Exupéry</p>
+                    <p>Uma história sobre amizade, imaginação e descobertas.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="generos">
+            <h2>Explore por gênero</h2>
+            <p>Escolha um gênero e encontre histórias diferentes.</p>
+
+            <ul>
+                <li><a href="#fantasia">Fantasia</a></li>
+                <li><a href="#ficcao">Ficção científica</a></li>
+                <li><a href="#romance">Romance</a></li>
+                <li><a href="#misterio">Mistério</a></li>
+                <li><a href="#aventura">Aventura</a></li>
+            </ul>
+        </section>
+
+        <section id="generos-livros">
+            <h2>Livros por gênero</h2>
+
+            <article id="fantasia">
+                <h3>Fantasia</h3>
+                <p>O Hobbit — J. R. R. Tolkien</p>
+                <img src="images/hobbit.jpg" width="150"height="225">
+            </article>
+
+            <article id="ficcao">
+                <h3>Ficção científica</h3>
+                <p>Duna — Frank Herbert</p>
+                <img src="images/duna.jpg" alt="capa duna"width="150"height="225">
+            </article>
+
+            <article id="romance">
+                <h3>Romance</h3>
+                <p>Orgulho e Preconceito — Jane Austen</p>
+                <img src="images/orgulho.jpg"width="150"height="225">
+            </article>
+
+            <article id="misterio">
+                <h3>Mistério</h3>
+                <p>Assassinato no Expresso do Oriente — Agatha Christie</p>
+                <img src="images/oriente.jpg"width="150"height="225">
+            </article>
+
+            <article id="aventura">
+                <h3>Aventura</h3>
+                <p>A Ilha do Tesouro — Robert Louis Stevenson</p>
+                <img src="images/ilha.jpg"width="150"height="225">
+            </article>
+
+        </section>
+
     </main>
-        <footer>
+
+    <footer>
         <p>BookNest - Sua biblioteca pessoal digital.</p>
         <p>&copy; 2026 BookNest. Todos os direitos reservados.</p>
     </footer>
 
-    
 </body>
 </html>

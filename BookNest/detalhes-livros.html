@@ -1,11 +1,10 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookNest - Detalhes do Livro</title>
+    <title>BookNest - O Hobbit</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,94 +24,108 @@
 
     <main>
 
-        <section id="informacoes-livro">
+        <section id="detalhes-livro">
 
-            <h2>O Hobbit</h2>
+            <figure>
+                <img src="images/hobbit.jpg" alt="Capa do livro O Hobbit">
+                <figcaption>Capa de O Hobbit</figcaption>
+            </figure>
 
-            <p><strong>Autor:</strong> J. R. R. Tolkien</p>
+            <div class="informacoes-livro">
+                <h2>O Hobbit</h2>
 
-            <p><strong>Gênero:</strong> Fantasia e Aventura</p>
+                <p><strong>Autor:</strong> J. R. R. Tolkien</p>
+                <p><strong>Gênero:</strong> Fantasia e Aventura</p>
+                <p><strong>Ano de publicação:</strong> 1937</p>
 
-            <p><strong>Ano de publicação:</strong> 1937</p>
+                <h3>Sinopse</h3>
 
-            <h3>Sinopse</h3>
+                <p>
+                    Bilbo Bolseiro é um hobbit que leva uma vida tranquila
+                    até receber a visita do mago Gandalf e de um grupo de
+                    anões. Convidado para uma aventura inesperada, ele parte
+                    em uma jornada para recuperar um tesouro guardado pelo
+                    dragão Smaug.
+                </p>
 
-            <p>
-                Bilbo Bolseiro é um hobbit que leva uma vida tranquila
-                até receber a visita do mago Gandalf e de um grupo de
-                anões. Juntos, eles partem em uma aventura para
-                recuperar um tesouro guardado por um dragão.
-            </p>
+                <p>
+                    <strong>Editora:</strong>
+                    <a href="https://www.harpercollins.com.br/"
+                       target="_blank">
+                        HarperCollins Brasil
+                    </a>
+                </p>
+            </div>
 
         </section>
 
-        <section id="situacao-leitura">
-
+        <section id="status-leitura">
             <h2>Minha leitura</h2>
 
-            <h3>Status do livro</h3>
-
             <form>
+                <fieldset>
+                    <legend>Adicionar à minha biblioteca</legend>
 
-                <input type="radio" id="lido" name="status" value="lido">
-                <label for="lido">Lido</label>
+                    <div class="opcao-status">
+                        <input type="radio" id="quero-ler"
+                               name="status" value="quero-ler">
+                        <label for="quero-ler">Quero ler</label>
+                    </div>
 
-                <input type="radio" id="lendo" name="status" value="lendo">
-                <label for="lendo">Lendo</label>
+                    <div class="opcao-status">
+                        <input type="radio" id="lendo"
+                               name="status" value="lendo">
+                        <label for="lendo">Estou lendo</label>
+                    </div>
 
-                <input type="radio" id="abandonado" name="status" value="abandonado">
-                <label for="abandonado">Abandonado</label>
+                    <div class="opcao-status">
+                        <input type="radio" id="finalizado"
+                               name="status" value="finalizado">
+                        <label for="finalizado">Finalizado</label>
+                    </div>
 
-                <input type="radio" id="quero-ler" name="status" value="quero-ler">
-                <label for="quero-ler">Quero ler</label>
+                </fieldset>
 
+                <button type="submit">Salvar status</button>
             </form>
-
-            <h3>Progresso da leitura</h3>
-
-            <label for="progresso">Porcentagem concluída:</label>
-
-            <progress id="progresso" value="45" max="100"></progress>
-
-            <p>45% concluído</p>
-
         </section>
 
-        <section id="avaliacao">
-
+        <section id="avaliacao-livro">
             <h2>Minha avaliação</h2>
 
             <form>
+                <label for="nota">Nota do livro:</label>
 
-                <p>Escolha sua nota:</p>
+                
+<p>Escolha sua nota:</p>
 
-                <input type="radio" id="estrela1" name="avaliacao" value="1">
-                <label for="estrela1">★</label>
+<div class="estrelas">
+    <input type="radio" id="estrela5" name="nota" value="5">
+    <label for="estrela5">★</label>
 
-                <input type="radio" id="estrela2" name="avaliacao" value="2">
-                <label for="estrela2">★★</label>
+    <input type="radio" id="estrela4" name="nota" value="4">
+    <label for="estrela4">★</label>
 
-                <input type="radio" id="estrela3" name="avaliacao" value="3">
-                <label for="estrela3">★★★</label>
+    <input type="radio" id="estrela3" name="nota" value="3">
+    <label for="estrela3">★</label>
 
-                <input type="radio" id="estrela4" name="avaliacao" value="4">
-                <label for="estrela4">★★★★</label>
+    <input type="radio" id="estrela2" name="nota" value="2">
+    <label for="estrela2">★</label>
 
-                <input type="radio" id="estrela5" name="avaliacao" value="5">
-                <label for="estrela5">★★★★★</label>
+    <input type="radio" id="estrela1" name="nota" value="1">
+    <label for="estrela1">★</label>
+</div>
 
+
+                <label for="review">Minha opinião sobre o livro:</label>
+
+                <textarea id="review" name="review"
+                    rows="5"
+                    placeholder="Escreva sua avaliação aqui..."></textarea>
+
+                <button type="submit">Enviar avaliação</button>
             </form>
-
-            <h3>Minha review</h3>
-
-            <p>
-                Uma aventura envolvente, com personagens interessantes
-                e um universo muito bem construído.
-            </p>
-
         </section>
-
-        <a href="biblioteca.html">Voltar para minha biblioteca</a>
 
     </main>
 

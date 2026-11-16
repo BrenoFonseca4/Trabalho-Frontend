@@ -204,6 +204,18 @@
 }
 
 /* Livros */
+.livro-horizontal {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+.livro-horizontal img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+}
 .pagina-home article {
     border: 1px solid #dddddd;
     padding: 15px;
@@ -225,7 +237,43 @@
     height: 18px;
     accent-color: #506b5e;
 }
+/* Novidades */
+.novidades {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+/* Blocos dos livros */
+.novidades article {
+    width: 160px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* Capas */
+.novidades img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Nomes dos livros */
+.novidades article h3 a {
+    color: #506b5e;
+    text-decoration: none;
+}
+
+.novidades article h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Informações */
+.novidades p {
+    font-size: 14px;
+}
 /* Rodapé */
 .pagina-home footer {
     background-color: #34483f;
@@ -234,7 +282,8 @@
     padding: 15px;
 }
 
-/* Página do catálogo */
+
+/* Página de descoberta de livros */
 .pagina-catalogo {
     background-color: #f2eee8;
     font-family: Arial, sans-serif;
@@ -272,7 +321,7 @@
 
 .pagina-catalogo section {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 25px;
     border: 1px solid #cccccc;
 }
@@ -281,26 +330,51 @@
     color: #34483f;
 }
 
-/* Cada livro do catálogo */
-.pagina-catalogo article {
-    border: 1px solid #dddddd;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.pagina-catalogo article h3 {
+.pagina-catalogo h3 {
     color: #506b5e;
 }
 
+/* Lista de livros */
+.lista-descoberta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lista-descoberta article {
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid #dddddd;
+    padding: 15px;
+}
+
+/* Links dos livros */
 .pagina-catalogo article a {
     color: #34483f;
     font-weight: bold;
 }
 
-/* Vídeo */
-.pagina-catalogo video {
-    max-width: 100%;
-    height: auto;
+.pagina-catalogo article a:hover {
+    color: #506b5e;
+}
+
+/* Lista de gêneros */
+#generos ul {
+    padding-left: 25px;
+}
+
+#generos li {
+    margin-bottom: 12px;
+}
+
+#generos a {
+    color: #34483f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#generos a:hover {
+    text-decoration: underline;
 }
 
 /* Rodapé */
@@ -310,6 +384,7 @@
     text-align: center;
     padding: 15px;
 }
+
 
 /* Página da biblioteca */
 .pagina-biblioteca {
@@ -380,6 +455,33 @@
 .pagina-biblioteca article a {
     color: #34483f;
     font-weight: bold;
+}
+/* Organização dos livros */
+.pagina-biblioteca .lista-livros {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Blocos individuais dos livros */
+.pagina-biblioteca .lista-livros article {
+    width: 160px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* Imagens dos livros */
+.pagina-biblioteca .lista-livros img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Informações dos livros */
+.pagina-biblioteca .lista-livros p {
+    font-size: 14px;
 }
 /* Sugestões de leitura */
 .pagina-biblioteca .sugestoes {
@@ -476,6 +578,293 @@
     width: 250px;
     height: 18px;
     accent-color: #506b5e;
+}
+
+/* Rodapé */
+.pagina-detalhes footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página de perfil */
+.pagina-perfil {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-perfil header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-perfil nav {
+    margin-top: 15px;
+}
+
+.pagina-perfil nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-perfil nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-perfil main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-perfil section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-perfil h2 {
+    color: #34483f;
+}
+
+/* Preferências */
+.pagina-perfil form {
+    margin-top: 15px;
+}
+
+.pagina-perfil form label {
+    display: inline-block;
+    margin: 8px 10px 8px 0;
+}
+
+.pagina-perfil input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.pagina-perfil button {
+    display: block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #34483f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagina-perfil button:hover {
+    background-color: #506b5e;
+}
+
+/* Rodapé */
+.pagina-perfil footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página inicial de apresentação */
+.pagina-index {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-index header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagina-index header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.pagina-index header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-index main {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.pagina-index section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-index h2 {
+    color: #34483f;
+}
+
+/* Rodapé */
+.pagina-index footer {
+    background-color: #34483f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Página de detalhes do livro */
+.pagina-detalhes {
+    background-color: #f2eee8;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+/* Cabeçalho */
+.pagina-detalhes header {
+    background-color: #34483f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-detalhes nav {
+    margin-top: 15px;
+}
+
+.pagina-detalhes nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.pagina-detalhes nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+.pagina-detalhes main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.pagina-detalhes section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+}
+
+.pagina-detalhes h2 {
+    color: #34483f;
+}
+
+.pagina-detalhes h3 {
+    color: #506b5e;
+}
+
+/* Informações e imagem do livro */
+#detalhes-livro {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#detalhes-livro figure {
+    margin: 0;
+    text-align: center;
+}
+
+#detalhes-livro img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #cccccc;
+}
+
+#detalhes-livro figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.informacoes-livro {
+    flex: 1;
+}
+
+.informacoes-livro a {
+    color: #34483f;
+    font-weight: bold;
+}
+
+/* Status de leitura */
+.pagina-detalhes fieldset {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.pagina-detalhes legend {
+    color: #34483f;
+    font-weight: bold;
+}
+
+.opcao-status {
+    margin: 12px 0;
+}
+
+/* Avaliação */
+
+/* Avaliação por estrelas */
+.estrelas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.estrelas input {
+    display: none;
+}
+
+.estrelas label {
+    font-size: 35px;
+    color: #cccccc;
+    cursor: pointer;
+    margin: 0;
+}
+
+.estrelas label:hover,
+.estrelas label:hover ~ label {
+    color: #e6b800;
+}
+
+.estrelas input:checked ~ label {
+    color: #e6b800;
+}
+
+/* Botões */
+.pagina-detalhes button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    background-color: #34483f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.pagina-detalhes button:hover {
+    background-color: #506b5e;
 }
 
 /* Rodapé */
