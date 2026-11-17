@@ -1,4 +1,4 @@
-BookNest 
+
 O BookNest é um site desenvolvido para ajudar leitores a organizar suas leituras em um espaço pessoal. A proposta é oferecer uma experiência simples, com foco nos livros, sem as características de uma rede social.
 
 Funcionalidades
